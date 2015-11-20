@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:uballoon
+LIBS:ub-minimal-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 563ADAF3
+P 1800 2200
+F 0 "BT1" H 1900 2250 50  0000 L CNN
+F 1 "LiPoly" H 1900 2150 50  0000 L CNN
+F 2 "Custom Parts:S2B-PH-SM4-TB" V 1800 2240 60  0001 C CNN
+F 3 "" V 1800 2240 60  0000 C CNN
+	1    1800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 563ADB38
+P 1800 2800
+F 0 "#PWR018" H 1800 2550 50  0001 C CNN
+F 1 "GND" H 1800 2650 50  0000 C CNN
+F 2 "" H 1800 2800 60  0000 C CNN
+F 3 "" H 1800 2800 60  0000 C CNN
+	1    1800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR019
+U 1 1 563ADB61
+P 1800 1100
+F 0 "#PWR019" H 1800 950 50  0001 C CNN
+F 1 "+BATT" H 1800 1240 50  0000 C CNN
+F 2 "" H 1800 1100 60  0000 C CNN
+F 3 "" H 1800 1100 60  0000 C CNN
+	1    1800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 563ADB9B
+P 2400 1900
+F 0 "R11" V 2480 1900 50  0000 C CNN
+F 1 "2.2k" V 2400 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2330 1900 30  0001 C CNN
+F 3 "" H 2400 1900 30  0000 C CNN
+	1    2400 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 563ADBD6
+P 2400 2350
+F 0 "D2" H 2400 2450 50  0000 C CNN
+F 1 "GREEN" H 2400 2250 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 2400 2350 60  0001 C CNN
+F 3 "" H 2400 2350 60  0000 C CNN
+	1    2400 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LD3985G30R U7
+U 1 1 563ADED4
+P 3800 1200
+F 0 "U7" H 3550 1400 40  0000 C CNN
+F 1 "LD3985G30R" H 4000 1400 40  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 3800 1300 35  0000 C CIN
+F 3 "" H 3800 1200 60  0000 C CNN
+	1    3800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C28
+U 1 1 563ADF70
+P 3150 1850
+F 0 "C28" H 3160 1920 50  0000 L CNN
+F 1 "1u" H 3160 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3150 1850 60  0001 C CNN
+F 3 "" H 3150 1850 60  0000 C CNN
+	1    3150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C30
+U 1 1 563AE19B
+P 4550 1850
+F 0 "C30" H 4560 1920 50  0000 L CNN
+F 1 "1u" H 4560 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4550 1850 60  0001 C CNN
+F 3 "" H 4550 1850 60  0000 C CNN
+	1    4550 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 1050 1    47   Output ~ 0
+3V0
+$Comp
+L LM3671 U8
+U 1 1 563AE4C8
+P 6200 1350
+F 0 "U8" H 6200 1300 47  0000 C CNN
+F 1 "LM3671" H 6200 1400 47  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 6200 1350 47  0001 C CNN
+F 3 "" H 6200 1350 47  0000 C CNN
+	1    6200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C31
+U 1 1 563AE553
+P 5000 1850
+F 0 "C31" H 5010 1920 50  0000 L CNN
+F 1 "4.7u" H 5010 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5000 1850 60  0001 C CNN
+F 3 "" H 5000 1850 60  0000 C CNN
+	1    5000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L9
+U 1 1 563AE799
+P 7350 1150
+F 0 "L9" H 7350 1250 50  0000 C CNN
+F 1 "74479787222" H 7350 1100 50  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE29_SMD1008" H 7350 1150 60  0001 C CNN
+F 3 "" H 7350 1150 60  0000 C CNN
+	1    7350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C32
+U 1 1 563AE8B0
+P 8000 1850
+F 0 "C32" H 8010 1920 50  0000 L CNN
+F 1 "10u" H 8010 1770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8000 1850 60  0001 C CNN
+F 3 "" H 8000 1850 60  0000 C CNN
+	1    8000 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 1150
+Wire Wire Line
+	8000 1150 8000 1750
+Connection ~ 5400 2650
+Wire Wire Line
+	8000 2650 8000 1950
+Wire Wire Line
+	7600 1150 8000 1150
+Wire Wire Line
+	7750 900  7750 1550
+Wire Wire Line
+	7750 1550 6900 1550
+Wire Wire Line
+	6900 1150 7100 1150
+Connection ~ 5000 2650
+Wire Wire Line
+	5400 1550 5400 2650
+Wire Wire Line
+	5500 1550 5400 1550
+Connection ~ 4550 2650
+Wire Wire Line
+	5000 2650 5000 1950
+Connection ~ 5400 1150
+Wire Wire Line
+	5400 1350 5400 1150
+Wire Wire Line
+	5500 1350 5400 1350
+Connection ~ 5000 1150
+Wire Wire Line
+	5000 1150 5500 1150
+Wire Wire Line
+	5000 750  5000 1750
+Wire Wire Line
+	3150 750  5000 750 
+Connection ~ 4550 1150
+Wire Wire Line
+	4550 2650 4550 1950
+Wire Wire Line
+	4550 1150 4250 1150
+Wire Wire Line
+	4550 1050 4550 1750
+Connection ~ 3800 2650
+Connection ~ 3150 1300
+Wire Wire Line
+	3350 1300 3150 1300
+Connection ~ 3150 2650
+Wire Wire Line
+	3150 1950 3150 2650
+Connection ~ 3150 1150
+Wire Wire Line
+	3150 750  3150 1750
+Connection ~ 2400 2650
+Wire Wire Line
+	3800 2650 3800 1500
+Connection ~ 2400 1150
+Connection ~ 1800 1150
+Wire Wire Line
+	1800 1150 3350 1150
+Wire Wire Line
+	2400 1750 2400 1150
+Wire Wire Line
+	2400 2150 2400 2050
+Connection ~ 1800 2650
+Wire Wire Line
+	2400 2650 2400 2550
+Wire Wire Line
+	1800 2650 8000 2650
+Wire Wire Line
+	1800 1100 1800 2050
+Wire Wire Line
+	1800 2350 1800 2800
+$Comp
+L +1V8 #PWR020
+U 1 1 563AEAEA
+P 7750 900
+F 0 "#PWR020" H 7750 750 50  0001 C CNN
+F 1 "+1V8" H 7750 1040 50  0000 C CNN
+F 2 "" H 7750 900 60  0000 C CNN
+F 3 "" H 7750 900 60  0000 C CNN
+	1    7750 900 
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8600 3650 8700 3750
+$EndSCHEMATC

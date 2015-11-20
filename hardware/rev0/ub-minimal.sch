@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:uballoon
+LIBS:ub-minimal-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5800 1500 1550 1400
+U 563690CE
+F0 "LORA TX" 60
+F1 "LORA.sch" 60
+F2 "SCK" I L 5800 2000 47 
+F3 "MOSI" I L 5800 2100 47 
+F4 "~CS" I L 5800 2300 47 
+F5 "MISO" O L 5800 2200 47 
+F6 "DIO0" O L 5800 2500 47 
+F7 "DIO5" O L 5800 2600 47 
+F8 "ANT" O R 7350 1800 47 
+F9 "OSCOUT" O L 5800 1900 47 
+$EndSheet
+$Comp
+L CONN_01X03 P1
+U 1 1 56383666
+P 8000 1800
+F 0 "P1" H 8000 2000 50  0000 C CNN
+F 1 "ANT" V 8100 1800 50  0000 C CNN
+F 2 "Custom Parts:ANT_50ohm" H 8000 1800 60  0001 C CNN
+F 3 "" H 8000 1800 60  0000 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 563836C8
+P 7700 2050
+F 0 "#PWR01" H 7700 1800 50  0001 C CNN
+F 1 "GND" H 7700 1900 50  0000 C CNN
+F 2 "" H 7700 2050 60  0000 C CNN
+F 3 "" H 7700 2050 60  0000 C CNN
+	1    7700 2050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1200 1500 1200 1400
+U 56389E15
+F0 "GPS" 47
+F1 "GPS.sch" 47
+F2 "RX" I R 2400 2100 47 
+F3 "TX" O R 2400 2200 47 
+$EndSheet
+Wire Wire Line
+	7800 1800 7350 1800
+Wire Wire Line
+	7800 1700 7700 1700
+Wire Wire Line
+	7700 1700 7700 2050
+Wire Wire Line
+	7700 1900 7800 1900
+Connection ~ 7700 1900
+Wire Wire Line
+	5800 2000 5000 2000
+Wire Wire Line
+	5100 4450 5100 2100
+Wire Wire Line
+	5100 2100 5800 2100
+Wire Wire Line
+	5800 2200 5200 2200
+Wire Wire Line
+	5800 2300 5300 2300
+Wire Wire Line
+	5300 2300 5300 4650
+Wire Wire Line
+	5300 4650 4700 4650
+Wire Wire Line
+	4700 4950 5400 4950
+Wire Wire Line
+	5400 4950 5400 2500
+Wire Wire Line
+	5400 2500 5800 2500
+Wire Wire Line
+	5800 2600 5500 2600
+Wire Wire Line
+	5500 2600 5500 5050
+Wire Wire Line
+	5500 5050 4700 5050
+Wire Wire Line
+	2400 2100 2850 2100
+Wire Wire Line
+	2850 2100 2850 4350
+Wire Wire Line
+	2850 4350 3000 4350
+Wire Wire Line
+	2750 4450 3000 4450
+Wire Wire Line
+	2750 4450 2750 2200
+Wire Wire Line
+	2750 2200 2400 2200
+$Sheet
+S 1200 4000 1200 1500
+U 563A7F82
+F0 "I2C Sensors and E2PROM" 47
+F1 "i2csens.sch" 47
+F2 "SDA" B R 2400 4900 47 
+F3 "SCL" I R 2400 4800 47 
+$EndSheet
+Wire Wire Line
+	2400 4800 3000 4800
+Wire Wire Line
+	3000 4900 2400 4900
+$Sheet
+S 1200 650  1200 500 
+U 563AD19C
+F0 "Power" 47
+F1 "power.sch" 47
+$EndSheet
+Wire Wire Line
+	5000 2000 5000 4350
+Wire Wire Line
+	5200 2200 5200 4550
+Wire Wire Line
+	5200 4550 4700 4550
+Wire Wire Line
+	5000 4350 4700 4350
+Wire Wire Line
+	4700 4450 5100 4450
+$Sheet
+S 3000 4000 1700 1500
+U 5638D8B4
+F0 "MCU" 47
+F1 "MCU.sch" 47
+F2 "LORA_~CS" O R 4700 4650 47 
+F3 "SPI_SCK" O R 4700 4350 47 
+F4 "SPI_MISO" I R 4700 4550 47 
+F5 "SPI_MOSI" O R 4700 4450 47 
+F6 "LORA_D5" I R 4700 5050 47 
+F7 "LORA_D0" I R 4700 4950 47 
+F8 "GPS_TX" O L 3000 4350 47 
+F9 "GPS_RX" I L 3000 4450 47 
+F10 "I2C_SDA" B L 3000 4900 47 
+F11 "I2C_SCL" O L 3000 4800 47 
+F12 "OSCIN" I R 4700 4250 47 
+$EndSheet
+Wire Wire Line
+	5800 1900 4900 1900
+Wire Wire Line
+	4900 1900 4900 4250
+Wire Wire Line
+	4900 4250 4700 4250
+$EndSCHEMATC
