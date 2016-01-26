@@ -100,41 +100,6 @@ F 3 "" H 2400 2350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LD3985G30R U7
-U 1 1 563ADED4
-P 3800 1200
-F 0 "U7" H 3550 1400 40  0000 C CNN
-F 1 "LD3985G30R" H 4000 1400 40  0000 C CNN
-F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 3800 1300 35  0000 C CIN
-F 3 "" H 3800 1200 60  0000 C CNN
-	1    3800 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C28
-U 1 1 563ADF70
-P 3150 1850
-F 0 "C28" H 3160 1920 50  0000 L CNN
-F 1 "1u" H 3160 1770 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3150 1850 60  0001 C CNN
-F 3 "" H 3150 1850 60  0000 C CNN
-	1    3150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C30
-U 1 1 563AE19B
-P 4550 1850
-F 0 "C30" H 4560 1920 50  0000 L CNN
-F 1 "1u" H 4560 1770 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4550 1850 60  0001 C CNN
-F 3 "" H 4550 1850 60  0000 C CNN
-	1    4550 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 4550 1050 1    47   Output ~ 0
-3V0
-$Comp
 L LM3671 U8
 U 1 1 563AE4C8
 P 6200 1350
@@ -197,7 +162,6 @@ Wire Wire Line
 	5400 1550 5400 2650
 Wire Wire Line
 	5500 1550 5400 1550
-Connection ~ 4550 2650
 Wire Wire Line
 	5000 2650 5000 1950
 Connection ~ 5400 1150
@@ -207,35 +171,10 @@ Wire Wire Line
 	5500 1350 5400 1350
 Connection ~ 5000 1150
 Wire Wire Line
-	5000 1150 5500 1150
-Wire Wire Line
-	5000 750  5000 1750
-Wire Wire Line
-	3150 750  5000 750 
-Connection ~ 4550 1150
-Wire Wire Line
-	4550 2650 4550 1950
-Wire Wire Line
-	4550 1150 4250 1150
-Wire Wire Line
-	4550 1050 4550 1750
-Connection ~ 3800 2650
-Connection ~ 3150 1300
-Wire Wire Line
-	3350 1300 3150 1300
-Connection ~ 3150 2650
-Wire Wire Line
-	3150 1950 3150 2650
-Connection ~ 3150 1150
-Wire Wire Line
-	3150 750  3150 1750
+	1800 1150 5500 1150
 Connection ~ 2400 2650
-Wire Wire Line
-	3800 2650 3800 1500
 Connection ~ 2400 1150
 Connection ~ 1800 1150
-Wire Wire Line
-	1800 1150 3350 1150
 Wire Wire Line
 	2400 1750 2400 1150
 Wire Wire Line
@@ -243,8 +182,6 @@ Wire Wire Line
 Connection ~ 1800 2650
 Wire Wire Line
 	2400 2650 2400 2550
-Wire Wire Line
-	1800 2650 8000 2650
 Wire Wire Line
 	1800 1100 1800 2050
 Wire Wire Line
@@ -262,4 +199,8 @@ F 3 "" H 7750 900 60  0000 C CNN
 $EndComp
 Entry Wire Line
 	8600 3650 8700 3750
+Wire Wire Line
+	5000 1750 5000 1150
+Wire Wire Line
+	1800 2650 8000 2650
 $EndSCHEMATC
